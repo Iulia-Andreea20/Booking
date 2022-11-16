@@ -30,11 +30,6 @@ p {
     font-size: 12px;
 }
 
-hr {
-    color: #a9a9a9;
-    opacity: 0.3;
-}
-
 .main-block {
     max-width: 340px;
     min-height: 340px;
@@ -109,10 +104,6 @@ input[type=password] {
     background: #fff;
 }
 
-input[type=password] {
-    margin-bottom: 15px;
-}
-
 #icon {
     display: inline-block;
     padding: 9.3px 15px;
@@ -161,4 +152,22 @@ button:hover {
 #dark-blue:hover {
 
     background-color: #1858ab;
+}
+
+.signup-btn {
+    display: block;
+    width: 91%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
 }

@@ -16,19 +16,33 @@
         <img id="logo" src="Booking-Emblem.png" alt="Booking Logo">
         <div class="main-block">
 
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
             <form action="/">
                 <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
                 <input type="text" name="name" id="name" placeholder="Email" required />
-                <!-- <label id="icon" for="name"><i class="fas fa-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="Name" required /> -->
+
+                <label id="icon" for="name"><i class="fas fa-user"></i></label>
+                <input type="text" name="name" id="name" placeholder="First Name" required />
+
+                <label id="icon" for="name"><i class="fas fa-user"></i></label>
+                <input type="text" name="name" id="name" placeholder="Last Name" required />
+
+                <label id="icon" for="name"><i class="fas fa-phone"></i></label>
+                <input type="text" name="name" id="name" placeholder="Phone Number" required />
+
                 <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
                 <input type="password" name="name" id="name" placeholder="Password" required />
-                <div class="btn-block">
-                    <button type="submit" href="/">Log In</button>
-                    <button type="submit" id="dark-blue" href="/">Sign Up</button>
+
+                <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+                <input type="password" name="name" id="name" placeholder="Confirm Password" required />
+
+                <div class="btn-block margin-top">
+                    <button id="dark-blue">Sign Up</button>
                 </div>
             </form>
+            <a class="signup-btn margin-bottom" href="login_page.html">
+                <button class="signup-btn">Log In</button>
+            </a>
         </div>
     </div>
     <script src="index.js"></script>
