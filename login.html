@@ -1,0 +1,102 @@
+<!-- <html lang="en">
+
+<head>
+    <title>
+        Booking
+    </title>
+    <meta name="Booking" content="Booking">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+        .main-block {
+            min-height: 310px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-page">
+        <img id="logo" src="img/Booking-Emblem.png" alt="Booking Logo">
+        <div class="main-block">
+
+            <h1>Log In</h1>
+            <div>
+                <form action="login_connection.php" method="get">
+                    <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                    <input type="text" name="email" id="name" placeholder="Email" required />
+
+                    <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+                    <input type="password" name="password" placeholder="Password" required />
+
+                    <div class="btn-block margin-top">
+                         <button type="submit" href="signin.html">Log In</button> 
+                        <input type="submit" name="submit" value="submit" class=" signup-btn">
+                    </div>
+                </form>
+
+                <a class="signup-btn" href="signup.html">
+                    <button class="signup-btn" id="dark-blue">Sign Up</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html> -->
+
+<html lang="en">
+
+<head>
+    <title>
+        Booking
+    </title>
+    <meta name="Booking" content="Booking">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <style>
+            #logo{
+                margin: 15% 0px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="first-page">
+        <img id="logo" src="img/Booking-Emblem.png" alt="Booking Logo">
+        <div class="main-block">
+
+            <h1>Log In</h1>
+            <form action="login_connection.php" method="post">
+
+                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                <input type="text" name="email" id="name" placeholder="Email" required />
+
+                <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+                <input type="password" name="_password" placeholder="Password" required />
+
+                <!-- <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+                <input type="password" name="confirmPassword" id="name" placeholder="Confirm Password" required /> -->
+        
+                <div class="btn-block margin-top">
+                    <!-- <button id="dark-blue" >Sign Up</button> -->
+                    <button id="dark-blue" type="submit" name="submit" value="Sign Up">Log In</button>
+
+                    <!-- <input type="submit" name="submit" value="Log In" class=" signup-btn"> -->
+                </div>
+            </form>
+            <a class="signup-btn margin-bottom" href="signup.html">
+                <button class="signup-btn">Sign Up</button>
+                
+            </a>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

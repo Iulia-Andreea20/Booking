@@ -5,7 +5,7 @@
         Booking
     </title>
     <meta name="Booking" content="Booking">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -18,35 +18,37 @@
 
 <body>
     <div class="first-page">
-        <img id="logo" src="../img/Booking-Emblem.png" alt="Booking Logo">
+        <img id="logo" src="img/Booking-Emblem.png" alt="Booking Logo">
         <div class="main-block">
 
             <h1>Sign Up</h1>
-            <form action="/">
-                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-                <input type="text" name="name" id="name" placeholder="Email" required />
+            <form action="signup_connection.php" method="post">
 
                 <label id="icon" for="name"><i class="fas fa-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="First Name" required />
+                <input type="text" name="firstName" id="name" placeholder="First Name" required />
 
                 <label id="icon" for="name"><i class="fas fa-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="Last Name" required />
+                <input type="text" name="lastName" id="name" placeholder="Last Name" required />
 
                 <label id="icon" for="name"><i class="fas fa-phone"></i></label>
-                <input type="text" name="name" id="name" placeholder="Phone Number" required />
+                <input type="text" name="phoneNumber" id="name" placeholder="Phone Number" required />
+
+                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                <input type="text" name="email" id="name" placeholder="Email" required />
 
                 <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-                <input type="password" name="name" id="name" placeholder="Password" required />
+                <input type="password" name="_password" placeholder="Password" required />
 
-                <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-                <input type="password" name="name" id="name" placeholder="Confirm Password" required />
-
+                <!-- <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+                <input type="password" name="confirmPassword" id="name" placeholder="Confirm Password" required /> -->
+        
                 <div class="btn-block margin-top">
-                    <button id="dark-blue">Sign Up</button>
+                    <button id="dark-blue" type="submit" name="submit" value="Sign Up">Sign Up</button>
                 </div>
             </form>
             <a class="signup-btn margin-bottom" href="login.html">
-                <button class="signup-btn">Log In</button>
+                <button class="signup-btn" >Log In</button>
+                
             </a>
         </div>
     </div>
