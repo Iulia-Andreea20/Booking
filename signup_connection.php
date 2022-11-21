@@ -2,7 +2,7 @@
 
     include('config/db_connect.php');
 
-    
+    //XSS Attacks preventio
     $firstName = htmlspecialchars($_POST['firstName']);
     $lastName = htmlspecialchars($_POST['lastName']);
     $email = htmlspecialchars($_POST['email']);

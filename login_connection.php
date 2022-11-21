@@ -3,7 +3,7 @@
 include('config/db_connect.php');
 
 if(isset($_POST['submit'])){
-   
+   //XSS Attacks prevention
     $email = htmlspecialchars($_POST['email']);
     $_password = htmlspecialchars($_POST['_password']);
     
