@@ -3,11 +3,11 @@
     include('config/db_connect.php');
 
     
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
-    $phoneNumber = $_POST['phoneNumber'];
-    $_password = $_POST['_password'];
+    $firstName = htmlspecialchars($_POST['firstName']);
+    $lastName = htmlspecialchars($_POST['lastName']);
+    $email = htmlspecialchars($_POST['email']);
+    $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
+    $_password = htmlspecialchars($_POST['_password']);
 
     $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
     $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
