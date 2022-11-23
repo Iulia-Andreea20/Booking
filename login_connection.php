@@ -3,7 +3,8 @@
 include('config/db_connect.php');
 
 if(isset($_POST['submit'])){
-   //XSS Attacks prevention
+   
+    //prevent XSS Attacks
     $email = htmlspecialchars($_POST['email']);
     $_password = htmlspecialchars($_POST['_password']);
     
@@ -30,7 +31,6 @@ if(isset($_POST['submit'])){
             echo 'Email or password is incorrect';
         }
 
-    //close connection
     mysqli_close($conn);
     }
 ?>

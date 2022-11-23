@@ -1,13 +1,15 @@
 <?php
+include('config/db_connect.php');
+$var = 0;
+if(isset($_POST['submit'])){
 
-    include('config/db_connect.php');
-
-    //XSS Attacks preventio
     $firstName = htmlspecialchars($_POST['firstName']);
-    $lastName = htmlspecialchars($_POST['lastName']);
+    //prevent XSS Attacks
     $email = htmlspecialchars($_POST['email']);
-    $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
+    $lastName = htmlspecialchars($_POST['lastName']);
     $_password = htmlspecialchars($_POST['_password']);
+    $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
+
 
     $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
     $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
@@ -24,6 +26,5 @@
     }else{
         echo 'Query error' . mysqli_error($conn);
     }
-
+}
 ?>
-
