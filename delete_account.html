@@ -21,21 +21,20 @@
         <img id="logo" src="img/Booking-Emblem.png" alt="Booking Logo">
         <div class="main-block">
 
-            <h1>Log In</h1>
-            <form action="login_connection.php" method="post">
+            <h1>Are you sure you want to leave?</h1>
+            <p style="text-align: center;">Insert your email for security purposes: </p>
+            <form action="delete_account.php" method="post">
 
                 <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
                 <input type="text" name="email" id="name" placeholder="Email" required />
-
-                <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-                <input type="password" name="_password" placeholder="Password" required />
         
                 <a href="mainpage.html">
-                    <button id="dark-blue" type="submit" name="submit" value="Sign Up">Log In</button>    
+                    <button id="dark-blue" type="submit" name="submit" value="Sign Up" style="background-color: red;" id="delete-btn">Delete</button>    
+                    <!-- rgb(116, 17, 17); -->
                 </a>
             </form>
-            <a class="signup-btn margin-bottom" href="signup.html">
-                <button class="signup-btn">Sign Up</button>
+            <a class="signup-btn margin-bottom" href="mainpage.html">
+                <button class="signup-btn">Back</button>
                 
             </a>
         </div>

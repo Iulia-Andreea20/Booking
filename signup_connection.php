@@ -18,7 +18,11 @@ if(isset($_POST['submit'])){
     $_password = mysqli_real_escape_string($conn, $_POST['_password']);
     
     //create sql
-    $sql = "INSERT INTO clients(firstName, lastName, phoneNumber, email, password) VALUES('$firstName', '$lastName', '$phoneNumber', '$email', '$_password')";
+    $sql = "INSERT INTO clients(firstName, 
+    lastName, phoneNumber, email, 
+    _password) 
+    VALUES('$firstName', '$lastName', 
+    '$phoneNumber', '$email', '$_password')";
 
     //save to DB and check
     if(mysqli_query($conn, $sql)){

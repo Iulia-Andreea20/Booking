@@ -118,7 +118,8 @@ input[type=password] {
     text-align: center;
 }
 
-button {
+button,
+.btn-input {
     width: 100%;
     padding: 10px 0;
     margin: 10px auto;
@@ -139,6 +140,8 @@ button:hover {
     margin: 25% 0px;
     display: block;
 }
+
+
 
 .first-page {
     display: flex;

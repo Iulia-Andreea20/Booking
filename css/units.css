@@ -1,0 +1,10 @@
+#logo {
+    width:100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
